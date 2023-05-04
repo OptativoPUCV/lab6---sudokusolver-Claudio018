@@ -77,7 +77,7 @@ int is_valid(Node* n){
     }
     */
 
-    //int sudo[10];
+    int sudo[10];
     for(int i = 0 ; i < 9 ; i++)
     {
         int fila[10] = {};

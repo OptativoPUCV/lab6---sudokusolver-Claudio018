@@ -967,3 +967,36 @@ test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 1df5738
+Thu 04 May 2023 10:05:52 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:117:22: error: ‘numero’ undeclared (first use in this function)
+  117 |             if (sudo[numero] == 1) {
+      |                      ^~~~~~
+sudoku.c:117:22: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:115:17: error: unused variable ‘num’ [-Werror=unused-variable]
+  115 |             int num = n->sudo[i][j];
+      |                 ^~~
+test.c:245:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  245 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:262:1: error: expected declaration or statement at end of input
+  262 | }
+      | ^
+In file included from test.c:5:
+sudoku.c:80:9: error: variable ‘sudo’ set but not used [-Werror=unused-but-set-variable]
+   80 |     int sudo[10];
+      |         ^~~~
+test.c:263: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:245:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  245 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
+    7 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+131a994
