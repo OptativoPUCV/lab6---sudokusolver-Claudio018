@@ -105,7 +105,7 @@ int is_valid(Node* n){
         }
     }
 
-    /*
+    
     for (int k = 0; k < 9; k++) {
         int sudok[10] = {0};
         for (int p = 0; p < 9; p++) {
@@ -120,25 +120,12 @@ int is_valid(Node* n){
 
         }
     
-    */
+    
     return 1;
 }
 
 
-/*
-            for(int m = 0 ; m < 9 ; m++)
-            { 
-                if(filcol[n->sudo[i][m] - 1] == 0)
-                    filcol[n->sudo[i][m] - 1] = 1;
-                else
-                {
-                    if(filcol[n->sudo[m][j] - 1] == 0)
-                        filcol[n->sudo[m][j] - 1] = 1;
-                    else
-                        return 0;
-                }
-            }
-*/
+
 
 List* get_adj_nodes(Node* n){
     List* list=createList();
