@@ -117,7 +117,7 @@ int is_valid(Node* n){
             if (sudok[num] == 1) {
                 return 0;
             }
-            sudo
+            sudok[i][j] = 1;
 
             
         }
