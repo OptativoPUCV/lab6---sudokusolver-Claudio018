@@ -83,10 +83,10 @@ int is_valid(Node* n){
         int fila[10] = {};
         for(int j = 0 ; j < 9 ; j++){
             int num = n->sudo[i][j];
-            if(fila[numero] == 1)
+            if(fila[num] == 1)
                 return 0;
 
-            fila[numero] = 1;
+            fila[num] = 1;
 
             
         }
