@@ -95,11 +95,12 @@ List* get_adj_nodes(Node* n){
                                 break;
                             } 
                 }
-                */
+                
                 if(entro != 1){
                     adj->sudo[i][j] = num;
                     pushFront(list,adj);
                 }
+                */
             }
         
         }
