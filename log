@@ -47,3 +47,14 @@ Thu 04 May 2023 04:45:01 PM UTC:
  tests:  0|5
 total_score: 0/70
 f56eb8c
+Thu 04 May 2023 05:07:51 PM UTC: 
+ sudoku.c | 25 +++++++++++++++++++++++++
+ 1 file changed, 25 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:57:27: error: expected ‘;’ before ‘j’
+   57 |         for (j = 0 ; j < 9 j++)
+      |                           ^~
+      |                           ;
+Compilation failed
+bf12fdb
