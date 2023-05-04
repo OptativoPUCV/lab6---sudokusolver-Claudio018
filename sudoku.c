@@ -45,7 +45,7 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-    
+    /*
     for(int k = 0 ; k < 9 ; k++)
     {
         int filcol[9] = {};
@@ -75,6 +75,24 @@ int is_valid(Node* n){
         }
         
     }
+    */
+
+    int sudo[10];
+    for(int i = 0 ; i < 9 ; i++)
+    {
+        int fila[10] = {};
+        for(int j = 0 ; j < 9 ; j++){
+            int num = n->sudo[i][j];
+            if(fila[numero] == 1)
+                return 0
+
+            fila[numero] = 1;
+
+            
+        }
+    }
+
+    
 
     return 1;
 }

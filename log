@@ -838,3 +838,31 @@ Thu 04 May 2023 09:52:28 PM UTC:
  tests:  2|4
 total_score: 15/70
 3e0ba1c
+Thu 04 May 2023 10:01:51 PM UTC: 
+ sudoku.c | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:86:21: error: ‘numero’ undeclared (first use in this function)
+   86 |             if(fila[numero] == 1)
+      |                     ^~~~~~
+sudoku.c:86:21: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:87:25: error: expected ‘;’ before ‘fila’
+   87 |                 return 0
+      |                         ^
+      |                         ;
+   88 | 
+   89 |             fila[numero] = 1;
+      |             ~~~~         
+sudoku.c:85:17: error: unused variable ‘num’ [-Werror=unused-variable]
+   85 |             int num = n->sudo[i][j];
+      |                 ^~~
+sudoku.c:83:13: error: variable ‘fila’ set but not used [-Werror=unused-but-set-variable]
+   83 |         int fila[10] = {};
+      |             ^~~~
+sudoku.c:80:9: error: unused variable ‘sudo’ [-Werror=unused-variable]
+   80 |     int sudo[10];
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a21a8ef
