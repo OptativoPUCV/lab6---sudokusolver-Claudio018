@@ -105,20 +105,19 @@ int is_valid(Node* n){
 
 
     for (int k = 0; k < 9; k++) {
-        //for (int i = 0; i < 10; i++) {
-            //sudo[i] = 0;
-        //}
 
-        int sudo[10] = {};
+
+        int sudok[10] = {};
 
         for (int p = 0; p < 9; p++) {
             int i = 3 * (k / 3) + (p / 3);
             int j = 3 * (k % 3) + (p % 3);
             int num = n->sudo[i][j];
 
-            if (sudo[num] == 1) {
+            if (sudok[num] == 1) {
                 return 0;
             }
+            sudo
 
             
         }
