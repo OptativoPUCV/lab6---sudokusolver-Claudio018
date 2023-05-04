@@ -898,3 +898,9 @@ sudoku.c:80:9: error: unused variable ‘sudo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 0174eb9
+Thu 04 May 2023 10:02:18 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|4
+total_score: 15/70
+78c9b80
