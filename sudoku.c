@@ -48,8 +48,8 @@ int is_valid(Node* n){
     
     for(int k = 0 ; k < 9 ; k++)
     {
-        int filcol[10] = {0};
-        int cuadrado[10] = {0};
+        int filcol[10] = {};
+        int cuadrado[10] = {};
         
         for(int p = 0 ; p < 9 ; p++)
         {
