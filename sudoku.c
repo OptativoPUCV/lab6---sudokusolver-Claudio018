@@ -72,9 +72,10 @@ List* get_adj_nodes(Node* n){
                         for (k = 0 ; k < 9 ; k++)
                             if (n->sudo[k][j] == num) break;
                 }
-                if(entro != 1)
+                if(entro != 1){
                     adj->sudo[i][j] = num;
                     pushFront(list,adj);
+                }
             }
         
         }
