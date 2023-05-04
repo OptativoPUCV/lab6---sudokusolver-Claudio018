@@ -212,3 +212,44 @@ sudoku.c:106:9: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 57a5bb9
+Thu 04 May 2023 05:25:08 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:66:21: error: expected ‘,’ or ‘;’ before ‘for’
+   66 |                     for(k = 0 ; k < 9 ; k++)
+      |                     ^~~
+sudoku.c:66:35: error: statement with no effect [-Werror=unused-value]
+   66 |                     for(k = 0 ; k < 9 ; k++)
+      |                                 ~~^~~
+sudoku.c:66:44: error: expected ‘;’ before ‘)’ token
+   66 |                     for(k = 0 ; k < 9 ; k++)
+      |                                            ^
+      |                                            ;
+sudoku.c:66:44: error: expected statement before ‘)’ token
+sudoku.c:74:25: error: expected expression before ‘Node’
+   74 |                         Node* adj = copy(n);
+      |                         ^~~~
+sudoku.c:73:21: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   73 |                     if(valido)
+      |                     ^~
+sudoku.c:75:25: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   75 |                         adj->sudo[i][j] = num;
+      |                         ^~~
+sudoku.c:75:25: error: ‘adj’ undeclared (first use in this function)
+sudoku.c:75:25: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c: At top level:
+sudoku.c:107:5: error: expected identifier or ‘(’ before ‘return’
+  107 |     return list;
+      |     ^~~~~~
+sudoku.c:108:1: error: expected identifier or ‘(’ before ‘}’ token
+  108 | }
+      | ^
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:106:9: error: control reaches end of non-void function [-Werror=return-type]
+  106 |         }
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+253a7ab
