@@ -64,7 +64,7 @@ List* get_adj_nodes(Node* n){
                 {
                     int valido = 1;
                     for(k = 0 ; k < 9 ; k++)
-                        if(n->sudo[i][k] == num || n->sudo[k][j])
+                        if(n->sudo[i][k] == num || n->sudo[k][j] == num)
                         {
                             valido = 0;
                             break;
