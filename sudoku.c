@@ -55,19 +55,26 @@ int is_valid(Node* n){
         {
             int i=3*(k/3) + (p/3) ;
             int j=3*(k%3) + (p%3) ;
+
+            int numero = n->sudo[i][j];
             
-            if(cuadrado[n->sudo[i][j] - 1] == 0)
-                cuadrado[n->sudo[i][j] - 1] = 1;
+            if(cuadrado[numero - 1] == 0)
+                cuadrado[numero - 1] = 1;
             else
                 return 0;
             
             
             for(int m = 0 ; m < 9 ; m++)
             { 
-                if(filcol[n->sudo[i][m] - 1] == 0 && filcol[n->sudo[m][j] - 1] == 0)
+                if(filcol[n->sudo[i][m] - 1] == 0)
                     filcol[n->sudo[i][m] - 1] = 1;
                 else
-                    return 0;
+                {
+                    if(filcol[n->sudo[m][j] - 1] == 0)
+                        filcol[n->sudo[m][j] - 1] = 1;
+                    else
+                        return 0;
+                }
             }
         }
         
