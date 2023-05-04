@@ -68,7 +68,7 @@ List* get_adj_nodes(Node* n){
                             break;
                         } 
                     }
-                    if (entro != 1)
+                    if (entro == 0)
                         for (k = 0 ; k < 9 ; k++)
                             if (n->sudo[k][j] == num){
                                 entro = 1;
