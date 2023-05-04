@@ -88,7 +88,19 @@ int is_valid(Node* n){
 
             fila[num] = 1;
 
-            
+        }
+    }
+
+    for(int j = 0 ; i < 9 ; i++)
+    {
+        int columna[10] = {};
+        for(int i = 0 ; j < 9 ; j++){
+            int num = n->sudo[i][j];
+            if(columna[num] == 1)
+                return 0;
+
+            fila[num] = 1;
+
         }
     }
 
