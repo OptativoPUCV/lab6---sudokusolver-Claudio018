@@ -918,3 +918,14 @@ sudoku.c:102:13: error: ‘fila’ undeclared (first use in this function)
       |             ^~~~
 Compilation failed
 7c5d247
+Thu 04 May 2023 10:03:24 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:94:21: error: ‘i’ undeclared (first use in this function)
+   94 |     for(int j = 0 ; i < 9 ; i++)
+      |                     ^
+sudoku.c:94:21: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+fedcf7d
