@@ -48,8 +48,8 @@ int is_valid(Node* n){
     
     for(int k = 0 ; k < 9 ; k++)
     {
-        int filcol[9] = {};
-        int cuadrado[9] = {};
+        int filcol[9] = {0};
+        int cuadrado[9] = {0};
         
         for(int p = 0 ; p < 9 ; p++)
         {
@@ -64,7 +64,7 @@ int is_valid(Node* n){
                 return 0;
 
 
-            if(filcol[n->sudo[i][p] - 1] == 1 ||filcol[n->sudo[p][j] - 1] == 1)
+            if(filcol[n->sudo[i][p] - 1] == 1 || filcol[n->sudo[p][j] - 1] == 1)
                 return 0;
 
 
