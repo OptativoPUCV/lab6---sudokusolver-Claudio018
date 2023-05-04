@@ -62,10 +62,12 @@ int is_valid(Node* n){
             
             
             for(int m = 0 ; m < 9 ; m++)
+            { 
                 if(filcol[n->sudo[i][m] - 1] == 0 || filcol[n->sudo[m][j]] == 0])
                     filcol[n->sudo[i][m] - 1] = 1
                 else
                     return 1;
+            }
                 
             
             //printf("%d ",n->sudo[i][j]);
