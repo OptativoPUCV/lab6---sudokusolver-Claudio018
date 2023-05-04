@@ -114,7 +114,7 @@ int is_valid(Node* n){
             int j = 3 * (k % 3) + (p % 3);
             int num = n->sudo[i][j];
 
-            if (sudo[numero] == 1) {
+            if (sudo[num] == 1) {
                 return 0;
             }
 
