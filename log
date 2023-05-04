@@ -509,3 +509,47 @@ Thu 04 May 2023 08:07:54 PM UTC:
  tests:  2|4
 total_score: 15/70
 11bad10
+Thu 04 May 2023 09:12:45 PM UTC: 
+ sudoku.c | 23 ++++++++++++++++++++---
+ 1 file changed, 20 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:59:48: error: expected ‘;’ before ‘else’
+   59 |                 cuadrado[n->sudo[i][j] - 1] = 1
+      |                                                ^
+      |                                                ;
+   60 |             else
+      |             ~~~~                                
+sudoku.c:65:74: error: expected ‘]’ before ‘)’ token
+   65 |                 if(filcol[n->sudo[i][m] - 1] == 0 || filcol[n->sudo[m][j]) == 0]
+      |                                                                          ^
+      |                                                                          ]
+sudoku.c:65:76: error: expected expression before ‘==’ token
+   65 |                 if(filcol[n->sudo[i][m] - 1] == 0 || filcol[n->sudo[m][j]) == 0]
+      |                                                                            ^~
+sudoku.c:65:17: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   65 |                 if(filcol[n->sudo[i][m] - 1] == 0 || filcol[n->sudo[m][j]) == 0]
+      |                 ^~
+sudoku.c:65:80: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   65 |                 if(filcol[n->sudo[i][m] - 1] == 0 || filcol[n->sudo[m][j]) == 0]
+      |                                                                                ^
+sudoku.c:64:13: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   64 |             for(int m = 0 ; m < 9 ; m++)
+      |             ^~~
+sudoku.c:65:80: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   65 |                 if(filcol[n->sudo[i][m] - 1] == 0 || filcol[n->sudo[m][j]) == 0]
+      |                                                                                ^
+sudoku.c:65:80: error: expected statement before ‘]’ token
+sudoku.c:66:39: error: ‘m’ undeclared (first use in this function)
+   66 |                     filcol[n->sudo[i][m] - 1] = 1
+      |                                       ^
+sudoku.c:66:39: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:66:50: error: expected ‘;’ before ‘else’
+   66 |                     filcol[n->sudo[i][m] - 1] = 1
+      |                                                  ^
+      |                                                  ;
+   67 |                 else
+      |                 ~~~~                              
+cc1: all warnings being treated as errors
+Compilation failed
+9c3cdd9
