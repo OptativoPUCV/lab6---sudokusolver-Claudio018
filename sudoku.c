@@ -62,8 +62,16 @@ int is_valid(Node* n){
                 cuadrado[numero - 1] = 1;
             else
                 return 0;
+
+
+            if(filcol[n->sudo[i][p] - 1] == 1 ||filcol[n->sudo[p][j] - 1] == 1)
+                return 0;
+
+
+            filcol[n->sudo[i][p] - 1] = 1;
+            filcol[n->sudo[p][j] - 1] = 1;
             
-            
+            /*
             for(int m = 0 ; m < 9 ; m++)
             { 
                 if(filcol[n->sudo[i][m] - 1] == 0)
@@ -76,6 +84,7 @@ int is_valid(Node* n){
                         return 0;
                 }
             }
+            */
         }
         
         
