@@ -91,10 +91,10 @@ int is_valid(Node* n){
         }
     }
 
-    for(int j = 0 ; i < 9 ; i++)
+    for(int j = 0 ; j < 9 ; j++)
     {
         int columna[10] = {};
-        for(int i = 0 ; j < 9 ; j++){
+        for(int i = 0 ; i < 9 ; i++){
             int num = n->sudo[i][j];
             if(columna[num] == 1)
                 return 0;
