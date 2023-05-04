@@ -421,3 +421,9 @@ sudoku.c:52:17: error: variable ‘i’ set but not used [-Werror=unused-but-set
 cc1: all warnings being treated as errors
 Compilation failed
 bd0d0bb
+Thu 04 May 2023 07:58:53 PM UTC: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  2|4
+total_score: 15/70
+a307b97
