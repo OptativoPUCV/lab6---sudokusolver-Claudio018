@@ -63,12 +63,14 @@ Node* DFS(Node* initial, int* cont){
   return NULL;
 }
 
+
 List* get_adj_nodes(Node* n){
        List* list=createList();
        
        return list;
     }
 
+}
 /*
 int main( int argc, char *argv[] ){
 

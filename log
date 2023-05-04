@@ -14,3 +14,18 @@ sudoku.c:52:7: note: previous definition of ‘get_adj_nodes’ with type ‘Lis
       |       ^~~~~~~~~~~~~
 Compilation failed
 442cc85
+Thu 04 May 2023 04:42:47 PM UTC: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+sudoku.c:67:7: error: redefinition of ‘get_adj_nodes’
+   67 | List* get_adj_nodes(Node* n){
+      |       ^~~~~~~~~~~~~
+sudoku.c:52:7: note: previous definition of ‘get_adj_nodes’ with type ‘List *(Node *)’
+   52 | List* get_adj_nodes(Node* n){
+      |       ^~~~~~~~~~~~~
+sudoku.c:73:1: error: expected identifier or ‘(’ before ‘}’ token
+   73 | }
+      | ^
+Compilation failed
+f80040e
