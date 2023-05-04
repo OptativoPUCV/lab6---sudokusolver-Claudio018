@@ -69,7 +69,14 @@ List* get_adj_nodes(Node* n){
                             valido = 0;
                             break;
                         }
+                    
                     if(valido)
+                        Node* adj = copy(n);
+                        adj->sudo[i][j] = num;
+                        pushFront(list,adj);
+                        
+                    }
+                        
                 }
                 /*
                 for (num = 1 ; num <= 9 ; num++)
