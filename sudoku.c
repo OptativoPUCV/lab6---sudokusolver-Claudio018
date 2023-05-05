@@ -45,43 +45,9 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-    /*
-    for(int k = 0 ; k < 9 ; k++)
-    {
-        int filcol[9] = {};
-        int cuadrado[9] = {};
-        
-        for(int p = 0 ; p < 9 ; p++)
-        {
-            int i=3*(k/3) + (p/3) ;
-            int j=3*(k%3) + (p%3) ;
-
-            int numero = n->sudo[i][j];
-            
-            if(cuadrado[numero - 1] == 0)
-                cuadrado[numero - 1] = 1;
-            else
-                return 0;
-
-
-            if(filcol[n->sudo[i][p] - 1] == 1 || filcol[n->sudo[p][j] - 1] == 1)
-                return 0;
-
-
-            filcol[n->sudo[i][p] - 1] = 1;
-            filcol[n->sudo[p][j] - 1] = 1;
-            
-            
-        }
-        
-    }
-    */
     
-    
-
-
     int i, j;
-    for(i = 0 ; i < 0 ; i++)
+    for(i = 0 ; i < 9 ; i++)
     {
         int filas[10] = {0};
         int columnas[10] = {0};
@@ -107,15 +73,10 @@ int is_valid(Node* n){
             int j=3*(k%3) + (p%3) ;
             if(n->sudo[i][j] != 0 && sudoku[n->sudo[i][j]] == 1) return 0;
             sudoku[n->sudo[i][j]] = 1;
-            
-            
+
         }
     }
 
-        
-    
-    
-    
     return 1;
 }
 
