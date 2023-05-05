@@ -140,7 +140,7 @@ List* get_adj_nodes(Node* n){
                 entro = 1;
                 break;
             } 
-        if(entro = 1) break;
+        if(entro == 1) break;
     }  
 
     
