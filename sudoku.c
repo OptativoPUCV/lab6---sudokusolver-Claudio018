@@ -105,7 +105,7 @@ int is_valid(Node* n){
         }
     }
 
-    
+    /*
     for (int k = 0; k < 9; k++) {
         int sudok[10] = {0};
         for (int p = 0; p < 9; p++) {
@@ -120,7 +120,7 @@ int is_valid(Node* n){
             sudok[num] = 1;
 
         }
-    
+    */
     
     return 1;
 }
