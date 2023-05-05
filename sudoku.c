@@ -87,6 +87,7 @@ List* get_adj_nodes(Node* n){
     List* list=createList();
     int i, j;
 
+    /*
     for(i = 0 ; i < 9 ; i++)
     {
         for(j = 0 ; j < 9 ; j++)
@@ -104,13 +105,14 @@ List* get_adj_nodes(Node* n){
             } 
         }
     }  
+    */
 
     
     
-    //int k, num;
+    int k, num;
 
 
-    /*
+    
     for (i = 0 ; i < 9 ; i++)
         for (j = 0 ; j < 9 ; j++)
         {
@@ -138,7 +140,7 @@ List* get_adj_nodes(Node* n){
             }
         
         }
-    */
+    
     return list;
     
 }
