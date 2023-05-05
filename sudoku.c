@@ -136,8 +136,9 @@ List* get_adj_nodes(Node* n){
                 }
                 
             } 
-            copia = k;
+            
         }
+        copia = k;
     }  
 
     return list;
