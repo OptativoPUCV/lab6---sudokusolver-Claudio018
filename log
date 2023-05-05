@@ -1783,3 +1783,14 @@ sudoku.c:137:15: error: unused variable ‘adj’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 0cbbb0e
+Fri 05 May 2023 11:59:43 PM UTC: 
+ sudoku.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:138:15: error: unused variable ‘first’ [-Werror=unused-variable]
+  138 |         Node* first = front(adj);
+      |               ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f76372c

@@ -135,6 +135,15 @@ Node* DFS(Node* initial, int* cont){
         if(is_final(current)) return current;
 
         List* adj = get_adj_nodes(current);
+        Node* first = front(adj);
+
+        while(adj != NULL)
+        {
+            push(stack,adj);
+            
+        }
+
+        (*cont)++;
     }
 
     
