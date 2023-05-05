@@ -1415,3 +1415,36 @@ sudoku.c:133:15: error: unused variable ‘entro’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 f3c803c
+Fri 05 May 2023 12:29:59 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:141:28: error: invalid initializer
+  141 |                 Node adj = copy(n);
+      |                            ^~~~
+sudoku.c:143:24: error: invalid type argument of ‘->’ (have ‘Node’)
+  143 |                     adj->sudo[i][j] = k;
+      |                        ^~
+sudoku.c:142:17: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+  142 |                 for(int k = 1 ; k <= 9 ; k++)
+      |                 ^~~
+sudoku.c:144:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  144 |                     if(is_valid(n))
+      |                     ^~
+sudoku.c:145:40: error: incompatible type for argument 2 of ‘pushFront’
+  145 |                         pushFront(list,adj);
+      |                                        ^~~
+      |                                        |
+      |                                        Node
+In file included from test.c:4:
+list.h:22:34: note: expected ‘void *’ but argument is of type ‘Node’
+   22 | void pushFront(List* list, void* data);
+      |                            ~~~~~~^~~~
+In file included from test.c:5:
+sudoku.c:133:15: error: unused variable ‘entro’ [-Werror=unused-variable]
+  133 |     int i, j, entro = 0;
+      |               ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+48cd8c4
