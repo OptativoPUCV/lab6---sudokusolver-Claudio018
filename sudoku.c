@@ -136,7 +136,7 @@ List* get_adj_nodes(Node* n){
     {
         for(j = 0 ; j < 9 ; j++)
         
-            if(n->sudo[i][k] == 0){
+            if(n->sudo[i][j] == 0){
                 entro = 1;
                 break;
             } 
