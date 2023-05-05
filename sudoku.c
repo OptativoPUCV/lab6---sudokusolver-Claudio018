@@ -136,11 +136,16 @@ List* get_adj_nodes(Node* n){
     {
         for(j = 0 ; j < 9 ; j++)
         
-            if(n->sudo[i][j] == 0){
-                entro = 1;
-                break;
+            if(n->sudo[i][j] == 0)
+            {
+                Node adj = copy(n);
+                for(int k = 1 ; k <= 9 ; k++)
+                    adj->sudo[i][j] = k;
+                    if(is_valid(n))
+                        pushFront(list,adj);
+                
             } 
-        if(entro == 1) break;
+        
     }  
 
     
