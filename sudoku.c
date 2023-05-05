@@ -144,7 +144,7 @@ List* get_adj_nodes(Node* n){
                 {
                     adj->sudo[i][j] = k;
                     if(is_valid(adj))
-                        pushBack(list,adj);
+                        pushFront(list,adj);
                 }
                 
             } 
