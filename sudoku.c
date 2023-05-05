@@ -143,7 +143,7 @@ List* get_adj_nodes(Node* n){
                 for(int k = 1 ; k <= 9 ; k++)
                 {
                     adj->sudo[i][j] = k;
-                    if(is_valid(n))
+                    if(is_valid(adj))
                         pushFront(list,adj);
                 }
                 
