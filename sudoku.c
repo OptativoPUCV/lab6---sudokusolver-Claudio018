@@ -120,7 +120,7 @@ List* get_adj_nodes(Node* n){
     */
 
     int k = 1;
-    int copia = k;
+    //int copia = k;
     for(i = 0 ; i < 9 ; i++)
     {
         for(j = 0 ; j < 9 ; j++)
@@ -128,7 +128,7 @@ List* get_adj_nodes(Node* n){
             if(n->sudo[i][j] == 0)
             {
                 Node* adj = copy(n);
-                for(k = copia ; k <= 9 ; k++)
+                for(k = 1 ; k <= 9 ; k++)
                 {
                     adj->sudo[i][j] = k;
                     if(is_valid(adj) == 1)
@@ -138,7 +138,7 @@ List* get_adj_nodes(Node* n){
             } 
             
         }
-        copia = k;
+        
     }  
 
     return list;
