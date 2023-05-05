@@ -45,7 +45,7 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-
+    /*
     for(int k = 0 ; k < 9 ; k++)
     {
         int filcol[9] = {};
@@ -75,53 +75,45 @@ int is_valid(Node* n){
         }
         
     }
-    
-
-
-    
-    /*
-    for(int i = 0 ; i < 9 ; i++)
-    {
-        int fila[10] = {};
-        for(int j = 0 ; j < 9 ; j++){
-            int num = n->sudo[i][j];
-            if(fila[num] == 1)
-                return 0;
-
-            fila[num] = 1;
-
-        }
-    }
-
-    for(int j = 0 ; j < 9 ; j++)
-    {
-        int columna[10] = {};
-        for(int i = 0 ; i < 9 ; i++){
-            int num = n->sudo[i][j];
-            if(columna[num] == 1)
-                return 0;
-
-            columna[num] = 1;
-        }
-    }
     */
+    
+    
 
-    /*
-    for (int k = 0; k < 9; k++) {
-        int sudok[10] = {0};
-        for (int p = 0; p < 9; p++) {
-            int i = 3 * (k / 3) + (p / 3);
-            int j = 3 * (k % 3) + (p % 3);
-            int num = n->sudo[i][j];
 
-            if (sudok[num] == 1) {
-                return 0;
-            }
+    int i, j;
+    for(i = 0 ; i < 0 ; i++)
+    {
+        int filas[10] = {0};
+        int columnas[10] = {0};
+
+        for(j = 0 ; j < 9 ; j++)
+        {
+            if(n->sudo[i][j] != 0 && filas[n->sudo[i][j]] == 1) return 0;
+            filas[n->sudo] = 1;
+
+            if(n->sudo[j][i] != 0 && filas[n->sudo[j][i]] == 1) return 0;
+            columnas[n->sudo] = 1;
+        }
+    }
+
+    int k;
+
+    for(k = 0 ; k < 9 ; k++)
+    {
+        int sudoku[10] = {0};
+        for(p = 0 ; p < 9 ; p++)
+        {
+            int i=3*(k/3) + (p/3) ;
+            int j=3*(k%3) + (p%3) ;
+            //printf("%d ",nodo->sudo[i][j]);
+            //if(p%3 == 2) printf("\n");
             
-            sudok[num] = 1;
-
         }
-    */
+    }
+
+        
+    }
+    
     
     return 1;
 }

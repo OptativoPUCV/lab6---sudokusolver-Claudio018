@@ -1512,3 +1512,44 @@ Fri 05 May 2023 12:36:38 AM UTC:
  tests:  0|5
 total_score: 0/70
 9459714
+Fri 05 May 2023 12:51:26 AM UTC: 
+ sudoku.c | 52 ++++++++++++++++++++++------------------------------
+ 1 file changed, 22 insertions(+), 30 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:92:18: error: array subscript is not an integer
+   92 |             filas[n->sudo] = 1;
+      |                  ^
+sudoku.c:95:21: error: array subscript is not an integer
+   95 |             columnas[n->sudo] = 1;
+      |                     ^
+sudoku.c:87:13: error: variable ‘columnas’ set but not used [-Werror=unused-but-set-variable]
+   87 |         int columnas[10] = {0};
+      |             ^~~~~~~~
+sudoku.c:104:13: error: ‘p’ undeclared (first use in this function)
+  104 |         for(p = 0 ; p < 9 ; p++)
+      |             ^
+sudoku.c:104:13: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:107:17: error: unused variable ‘j’ [-Werror=unused-variable]
+  107 |             int j=3*(k%3) + (p%3) ;
+      |                 ^
+sudoku.c:106:17: error: unused variable ‘i’ [-Werror=unused-variable]
+  106 |             int i=3*(k/3) + (p/3) ;
+      |                 ^
+sudoku.c:103:13: error: unused variable ‘sudoku’ [-Werror=unused-variable]
+  103 |         int sudoku[10] = {0};
+      |             ^~~~~~
+sudoku.c: At top level:
+sudoku.c:118:5: error: expected identifier or ‘(’ before ‘return’
+  118 |     return 1;
+      |     ^~~~~~
+sudoku.c:119:1: error: expected identifier or ‘(’ before ‘}’ token
+  119 | }
+      | ^
+sudoku.c: In function ‘is_valid’:
+sudoku.c:115:5: error: control reaches end of non-void function [-Werror=return-type]
+  115 |     }
+      |     ^
+cc1: all warnings being treated as errors
+Compilation failed
+db22221
