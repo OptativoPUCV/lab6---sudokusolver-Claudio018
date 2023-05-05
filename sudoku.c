@@ -131,6 +131,10 @@ Node* DFS(Node* initial, int* cont){
     {
         Node* current = top(stack);
         pop(stack);
+
+        if(is_final(current)) return current;
+
+        List* adj = get_adj_nodes(current);
     }
 
     
