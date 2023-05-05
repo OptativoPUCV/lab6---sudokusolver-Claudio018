@@ -45,7 +45,7 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-    /*
+
     for(int k = 0 ; k < 9 ; k++)
     {
         int filcol[9] = {};
@@ -75,7 +75,7 @@ int is_valid(Node* n){
         }
         
     }
-    */
+    
 
 
     
@@ -144,7 +144,7 @@ List* get_adj_nodes(Node* n){
                 {
                     adj->sudo[i][j] = k;
                     if(is_valid(adj))
-                        pushFront(list,adj);
+                        pushBack(list,adj);
                 }
                 
             } 
