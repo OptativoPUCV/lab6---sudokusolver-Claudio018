@@ -116,6 +116,7 @@ int is_valid(Node* n){
             if (sudok[num] == 1) {
                 return 0;
             }
+            
             sudok[num] = 1;
 
         }
@@ -129,8 +130,25 @@ int is_valid(Node* n){
 
 List* get_adj_nodes(Node* n){
     List* list=createList();
-    int i, j, k, num;
+    int i, j, entro = 0;
+
+    for(i = 0 ; i < 9 ; i++)
+    {
+        for(j = 0 ; j < 9 : j++)
+        
+            if(n->sudo[i][k] == 0){
+                entro = 1;
+                break;
+            } 
+        if(entro = 1) break;
+    }  
+
     
+    
+    //int k, num;
+
+
+    /*
     for (i = 0 ; i < 9 ; i++)
         for (j = 0 ; j < 9 ; j++)
         {
@@ -159,6 +177,7 @@ List* get_adj_nodes(Node* n){
         
         }
     return list;
+    */
 }
 
 
