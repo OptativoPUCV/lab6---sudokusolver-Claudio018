@@ -96,7 +96,7 @@ int is_valid(Node* n){
         }
     }
 
-    int k;
+    int k, p;
 
     for(k = 0 ; k < 9 ; k++)
     {

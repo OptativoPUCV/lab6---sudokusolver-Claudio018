@@ -1589,3 +1589,14 @@ sudoku.c:104:13: note: each undeclared identifier is reported only once for each
 cc1: all warnings being treated as errors
 Compilation failed
 186846f
+Fri 05 May 2023 12:53:42 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:87:13: error: variable ‘columnas’ set but not used [-Werror=unused-but-set-variable]
+   87 |         int columnas[10] = {0};
+      |             ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ffa2c9a
