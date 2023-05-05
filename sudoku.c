@@ -79,7 +79,7 @@ int is_valid(Node* n){
 
 
     
-    
+    /*
     for(int i = 0 ; i < 9 ; i++)
     {
         int fila[10] = {};
@@ -104,6 +104,7 @@ int is_valid(Node* n){
             columna[num] = 1;
         }
     }
+    */
 
     /*
     for (int k = 0; k < 9; k++) {
