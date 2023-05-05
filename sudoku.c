@@ -121,7 +121,6 @@ int is_final(Node* n){
 
     return 1;
             
-    return 0;
 }
 
 Node* DFS(Node* initial, int* cont){
