@@ -133,24 +133,24 @@ Node* DFS(Node* initial, int* cont){
         pop(stack);
 
         if(is_final(current)) {
-            //free(stack);
+            free(stack);
             return current;
         } 
 
         List* adj = get_adj_nodes(current);
         Node* first = front(adj);
 
-        while(adj != NULL && first != NULL)
+        while(adj != NULL)
         {
             push(stack,first);
             first = next(adj);
         }
         
-        //free(adj);
+        free(adj);
 
         (*cont)++;
 
-        //free(current);
+        free(current);
     }
     free(stack);
 
