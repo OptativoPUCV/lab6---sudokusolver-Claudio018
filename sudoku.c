@@ -139,7 +139,7 @@ Node* DFS(Node* initial, int* cont){
 
         while(adj != NULL)
         {
-            push(stack,adj);
+            push(stack,first);
             adj = next(adj);
             
         }
