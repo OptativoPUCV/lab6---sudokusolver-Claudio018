@@ -141,13 +141,13 @@ Node* DFS(Node* initial, int* cont){
         Node* first = front(adj);
 
 
-        /*
+        
         while(adj != NULL)
         {
             push(stack,first);
-            first = next(adj);
+            adj = next(adj);
         }
-        */
+        
         
         free(adj);
 
