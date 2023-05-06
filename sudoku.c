@@ -132,7 +132,10 @@ Node* DFS(Node* initial, int* cont){
         Node* current = top(stack);
         pop(stack);
 
-        if(is_final(current)) return current;
+        if(is_final(current)) {
+            free(stack);
+            return current;
+        } 
 
         List* adj = get_adj_nodes(current);
         Node* first = front(adj);
@@ -140,7 +143,7 @@ Node* DFS(Node* initial, int* cont){
         while(adj != NULL && first != NULL)
         {
             push(stack,first);
-            adj = next(adj);
+            first = next(adj);
         }
         
         free(adj);
