@@ -140,11 +140,14 @@ Node* DFS(Node* initial, int* cont){
         List* adj = get_adj_nodes(current);
         Node* first = front(adj);
 
+
+        /*
         while(adj != NULL)
         {
             push(stack,first);
             first = next(adj);
         }
+        */
         
         free(adj);
 
