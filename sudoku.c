@@ -133,7 +133,7 @@ Node* DFS(Node* initial, int* cont){
         pop(stack);
 
         if(is_final(current)) {
-            free(stack);
+            //free(stack);
             return current;
         } 
 
@@ -146,11 +146,11 @@ Node* DFS(Node* initial, int* cont){
             first = next(adj);
         }
         
-        free(adj);
+        //free(adj);
 
         (*cont)++;
 
-        free(current);
+        //free(current);
     }
     free(stack);
 
