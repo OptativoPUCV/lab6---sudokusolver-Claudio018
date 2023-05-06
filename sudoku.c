@@ -140,8 +140,6 @@ Node* DFS(Node* initial, int* cont){
         List* adj = get_adj_nodes(current);
         Node* first = front(adj);
 
-
-        
         while(first != NULL)
         {
             push(stack,first);
@@ -150,10 +148,11 @@ Node* DFS(Node* initial, int* cont){
         
         
         free(adj);
+        free(current);
 
         (*cont)++;
 
-        free(current);
+        
     }
     free(stack);
 
